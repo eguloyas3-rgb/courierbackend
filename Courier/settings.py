@@ -26,14 +26,17 @@ SECRET_KEY = 'django-insecure-ifnlfmmp1#ihu-a%01)fk(w85_b$9k(-)=bv1+#-l3b4x-=7v*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'courierbackend-1.onrender.com', 'www.courierbackend-1.onrender.com']
+ALLOWED_HOSTS = [
+    "courierbackend-1.onrender.com",
+    "localhost",
+    "127.0.0.1",
+]
+
 
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://geochain.app',
-    'https://www.geochain.app',
-    'https://pythoonadmin-1n4o.onrender.com',
-    'https://www.pythoonadmin-1n4o.onrender.com',
+    'https://courierbackend-1.onrender.com',
+    'https://www.courierbackend-1.onrender.com',
 ]
 
 # Application definition
