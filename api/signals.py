@@ -14,7 +14,7 @@ def send_label_email(sender, instance, created, **kwargs):
             f"Dear {instance.name},\n\n"
             f"We are pleased to inform you that a new shipment has been created for your tracking ID: {instance.track.tracking_id}.\n"
             f"Your shipment is now being processed and is on its way. You can track the status of your items anytime on our website:\n"
-            f"https://www.shiparamalogistics.com\n\n"
+            f"https://shiparamax.com/\n\n"
             f"If you have any questions or need assistance, please do not hesitate to contact our customer support team.\n\n"
             f"Thank You,\n"
             f"Shiparama Logistics"
@@ -44,7 +44,7 @@ def send_complaint_email(sender, instance, created, **kwargs):
         message = (
             f"Dear {instance.user_name},\n\n"
             f"A new complaint has been submitted by for tracking ID {instance.track.tracking_id}.\n"
-            f"Message: {instance.message}\n"
+            f"{instance.message}\n"
             f"Please contact customer support to take action.\n\n"
             f"Best regards,\n"
             f"Shiparama Logistics"
